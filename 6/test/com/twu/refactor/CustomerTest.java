@@ -33,18 +33,18 @@ public class CustomerTest {
    }
 
     @Test
-    public void shouldOutputEmptyStatement() throws Exception {
+    public void should_output_empty_statement() throws Exception {
         Customer customer = new Customer("Golden Shark");
         verifyOutput(customer.statement(), "outputEmpty");
     }
 
     @Test
-    public void shouldOutputCustomerStatement() throws Exception {
+    public void should_output_customer_statement() throws Exception {
         verifyOutput(dinsdale.statement(), "output1");
     }
 
     @Test
-    public void shouldOutputChangedStatement() throws Exception {
+    public void should_output_changed_statement() throws Exception {
         la.setPriceCode(Movie.REGULAR);
         verifyOutput(dinsdale.statement(), "outputChange");
     }

@@ -9,7 +9,7 @@ import static org.junit.matchers.JUnitMatchers.containsString;
 
 public class OrderReceiptTest {
     @Test
-    public void shouldPrintCustomerInformationOnOrder() {
+    public void should_print_customer_information_on_order() {
         Order order = new Order("Mr X", "Chicago, 60601", new ArrayList<LineItem>());
         OrderReceipt receipt = new OrderReceipt(order);
 
@@ -20,7 +20,7 @@ public class OrderReceiptTest {
     }
 
     @Test
-    public void shouldPrintLineItemAndSalesTaxInformation() {
+    public void should_print_line_item_and_sales_tax_information() {
         ArrayList<LineItem> lineItems = new ArrayList<LineItem>() {{
             add(new LineItem("milk", 10.0, 2));
             add(new LineItem("biscuits", 5.0, 5));

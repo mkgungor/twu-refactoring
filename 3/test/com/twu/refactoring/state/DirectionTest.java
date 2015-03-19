@@ -18,19 +18,19 @@ public class DirectionTest {
     }
 
     @Test
-    public void shouldTurnEastWhenTurnRightFromNorth() {
+    public void should_turn_east_when_turn_right_from_north() {
         Direction east = north.turnRight();
         assertThat(east, is(new Direction('E')));
     }
 
     @Test
-    public void shouldTurnWestWhenTurnLeftFromNorth() {
+    public void should_turn_west_when_turn_left_from_north() {
         Direction west = north.turnLeft();
         assertThat(west, is(new Direction('W')));
     }
 
     @Test
-    public void shouldTurnNorthWhenTurnLeftFromEast() {
+    public void should_turn_north_when_turn_left_from_east() {
         Direction north = east.turnLeft();
         assertThat(north, is(new Direction('N')));
     }
